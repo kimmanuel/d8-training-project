@@ -86,7 +86,16 @@
  * );
  * @endcode
  */
- $databases = array();
+ $databases['default']['default'] = array(
+    'driver' => 'mysql',
+    'database' => 'd8_training_project',
+    'username' => 'drupaluser',
+    'password' => '',
+    'driver' => 'mysql',
+    'host' => '127.0.0.1',
+    'port' => 33067,
+    'collation' => 'utf8mb4_general_ci'
+ );
 
 /**
  * Customizing database settings.
@@ -772,3 +781,4 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
 }
 // </DDSETTINGS>
 $settings['install_profile'] = 'standard';
+$config_directories['sync'] = 'sites/default/files/config_acqTmp-2017-05-03T11.57.40-1590/sync';
