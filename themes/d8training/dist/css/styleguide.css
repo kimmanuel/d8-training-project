@@ -140,7 +140,8 @@
       position: fixed;
       width: 100%;
       top: 0;
-      left: 0; } }
+      left: 0;
+      z-index: 1; } }
 
 #kss-node .kss-nav__menu {
   padding: 0;

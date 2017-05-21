@@ -1,0 +1,36 @@
+/*===============================
+    22. 404 ERROR PAGE
+================================*/
+.error-page .page-barner-bg {
+  background: transparent url("img/blog/blog_page_barner.jpg") no-repeat scroll center center/cover; }
+
+.error-text {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #242628; }
+
+.error-main-hidding > h2 {
+  font-size: 96px;
+  font-weight: 400;
+  letter-spacing: 10px;
+  line-height: 1;
+  margin-bottom: 40px; }
+
+.error-text h5 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+  margin-bottom: 50px; }
+
+.error-text .single-sidebar-widget > form {
+  height: 50px;
+  position: relative; }
+
+.error-text .single-sidebar-widget > form button {
+  height: 46px; }
+
+.error-text a {
+  color: #d0963e; }
+
+/*# sourceMappingURL=not-found.css.map */

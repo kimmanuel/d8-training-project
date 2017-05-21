@@ -1,0 +1,19 @@
+<!--START TOP AREA-->
+<header class="top-area {{ classes|default() }}" id="home">
+  {% if (barner|default()) -%}
+    <div class="page-barner-bg" style="background-image: url({{ barner.background_image.src }})"></div>
+  {%- endif %}
+
+  {% if (main_menu|default()) -%}
+    {% include '@d8training/main-menu/main-menu.twig' with main_menu only %}
+  {%- endif %}
+
+  {% if (slider|default()) %}
+    {% include '@d8training/slider/slider.twig' with slider only %}
+  {% endif %}
+
+  {% if (barner|default()) %}
+    {% include '@d8training/barner/barner.twig' with barner only %}
+  {% endif %}
+</header>
+<!--END TOP AREA-->

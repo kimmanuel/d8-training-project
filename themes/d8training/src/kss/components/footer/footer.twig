@@ -1,0 +1,43 @@
+<!--FOOTER AREA-->
+<div class="footer-area">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <div class="footer-top section-padding text-center">
+          <div class="footer-logo">
+            {% include '@d8training/image/image.twig' with image only %}
+          </div>
+          <div class="footer-address">
+            <p>{{ address }}</p>
+            <p><a href="mailto:{{ email }}">{{ email }}</a></p>
+            <p><a href="tel:{{ telephone }}">{{ telephone }}</a></p>
+          </div>
+          <div class="footer-social-bookmark">
+            <ul>
+              {% for bookmark in bookmarks %}
+              <li><a href="{{ bookmark.url }}"><i class="{{ bookmark.icon_class }}"></i></a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+        <div class="footer-menu">
+          <ul>
+            {% for link in links %}
+            <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+        <div class="footer-copyright">
+          <p>{{ copyright|raw }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--FOOER AREA END-->
